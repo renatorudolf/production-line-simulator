@@ -1,0 +1,3 @@
+com/renatorudolf/simulator/engine/SimulatorTest.class
+com/renatorudolf/simulator/config/ConfigLoaderTest.class
+com/renatorudolf/simulator/report/ReportFormatterTest.class

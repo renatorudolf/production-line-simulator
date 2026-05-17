@@ -1,0 +1,26 @@
+# Example: a 3-stage widget assembly line.
+# Items arrive every 100 ms and pass through Cutter -> Assembler -> Packager.
+simulation:
+  name: "Widget Assembly Line"
+
+  machines:
+    - id: cutter
+      name: "Cutting Station"
+      processing_time_ms: 200
+      capacity: 1
+
+    - id: assembler
+      name: "Assembly Station"
+      processing_time_ms: 500
+      capacity: 2
+
+    - id: packager
+      name: "Packaging Station"
+      processing_time_ms: 300
+      capacity: 1
+
+  flow: [cutter, assembler, packager]
+
+  items:
+    count: 25
+    arrival_interval_ms: 100
